@@ -1,0 +1,62 @@
+body {
+    background-color: #622b0c;            /* 背景色 */
+    background-size: cover;               /* 全画面 */
+    background-attachment: fixed;         /* 固定 */
+    background-position: center center;   /* 縦横中央 */
+    background-image: url("images/shinkansen_image.jpg");
+}
+
+.center {
+    text-align: center;
+}
+
+.flat.inverted {
+    position: relative;
+    text-align: center;
+    /* 中央揃え */
+    display: block;
+    margin: 0 auto;
+    /* 幅の指定 */
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    /* 色の指定 */
+    background: linear-gradient(135deg, #ffd900, #ff9300);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.flat.inverted:hover {
+    background: linear-gradient(-45deg, #ffd900, #ff9300);
+}
+.flat.inverted:active, .flat.inverted:focus {
+    top: 2px;
+}
+
+.body-box {
+    margin: 2em auto;  
+    padding: 1em;
+    width: 90%; /*幅の調節*/
+    color: #666666; /*文字色*/
+    background-color: #f7f7f7; /*背景色*/
+    border: 2px solid #ccc; /*線の太さ・色*/
+    border-radius: 8px; /*角の丸み*/ 
+    opacity: 0.9;
+
+    height: 500px;
+    
+}
+
+ul, ol {
+    color: #668ad8; 
+    border: double 5px #668ad8;/*二重線 太さ 色*/
+    background: #f1f8ff; 
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+
+ul li, ol li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+}

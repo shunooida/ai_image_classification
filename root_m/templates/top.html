@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf8" />
+	<link rel="stylesheet" href="../static/style.css">
+	<title>トップ画面</title>
+</head>
+
+<body>
+
+	<div class="body-box">
+		<div class="center">
+			<h1>アップロード</h1>
+			<h2>zipファイルを選択し、分類開始ボタンを押してください</h2>
+		</div>
+		<form method="POST" action="/download" enctype="multipart/form-data">
+			<input placeholder="データ" name="the_file" type="file" accept=".zip" required />
+			<input value="分類開始" type="submit" class="reset flat inverted" />
+		</form>
+		<br>
+		<br>
+		<ol>
+			<li>zip形式に圧縮してアップロードをしてください。</li>
+			<li>画像分類処理は時間がかかります。終了するまでタブは閉じないでください。</li>
+			<li>アップロード後、自動的に画像の分類処理が始まります。</li>
+			<li>分類が完了したらダウンロード画面が表示されます。</li>
+			<li>ダウンロード画面が表示されたら、ZIP形式でダウンロードできます。</li>
+		</ol>
+	</div>
+
+</body>
+
+</html>
