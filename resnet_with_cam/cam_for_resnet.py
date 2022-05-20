@@ -19,7 +19,8 @@ def cam_for_resnet(model, img_fpath):
     img = transforms(img)
     img = img.unsqueeze(0)
 
-    model.eval()#モデルを推論モードにする
+    #モデルを推論モードにする
+    model.eval()
 
     #最後の畳み込み層の特徴マップを取得
     features = model.conv1(img)
